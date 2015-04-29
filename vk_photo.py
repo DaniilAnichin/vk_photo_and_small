@@ -5,8 +5,8 @@ import shutil
 import urllib
 import json
 import webbrowser
+
 from settings import settings
-import vk_auth
 
 
 def collect_urls(url_file_path):
@@ -60,6 +60,7 @@ def download_images(url_dicts, to_dir):
 def main():
     args = sys.argv[1:]
     print 'works? %s' % settings['VK_login']
+    print 'and this too %s' % settings['VK_client_id']
 
 
 if __name__ == '__main__':
