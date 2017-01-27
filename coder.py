@@ -50,13 +50,13 @@ def main():
     args = sys.argv[1:]
     args[1] = open(args[1], 'r').read()
     if args[0] == 'from':
-        print full_decode(args[1], args[2])
+        print(full_decode(args[1], args[2]))
     elif args[0] == 'to':
-        print full_encode(args[1], args[2])
+        print(full_encode(args[1], args[2]))
     else:
-        print 'Nein, nicht heute'
+        print('Nein, nicht heute')
     finish_time = datetime.now()
-    print str(finish_time - start_time)
+    print(str(finish_time - start_time))
 
 
 if __name__ == '__main__':
